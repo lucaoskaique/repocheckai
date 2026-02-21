@@ -1,0 +1,7 @@
+# Ignorar node_modules se houver
+node_modules/
+.DS_Store
+
+# Não ignorar os partials e HTMLs
+!partials/
+!*.html
