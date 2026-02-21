@@ -24,6 +24,8 @@ npm run dev:site
 ```
 Abre um servidor local em `http://localhost:3000` com hot-reload ⚡
 
+> **Nota:** O comando cria automaticamente um link simbólico `site-vite/assets -> site/assets` para servir CSS/JS/imagens.
+
 ### Build para Produção
 ```bash
 npm run build:site

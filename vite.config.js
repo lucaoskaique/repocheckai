@@ -4,6 +4,7 @@ import { htmlPartialsPlugin } from './vite-plugin-html-partials.js';
 
 export default defineConfig({
   root: 'site-vite',
+  publicDir: false, // Não copiar assets duplicados
   
   build: {
     outDir: '../site',

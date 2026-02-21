@@ -213,6 +213,13 @@
     grid-template-columns: 1fr;
   }
 
+  /* About page responsive adjustments */
+  .about-highlight-tile,
+  .about-highlight-tile-featured {
+    grid-column: span 1;
+    min-height: auto;
+  }
+
   /* Badge grid stays 2-col for compactness */
   .badge-grid {
     grid-template-columns: repeat(2, 1fr);

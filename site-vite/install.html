@@ -16,24 +16,72 @@
       content="Quick install and first-run commands for RepoCheckAI CLI."
     />
     <meta property="og:url" content="https://glaucia86.github.io/repocheckai/install.html" />
-    <meta property="og:image" content="https://glaucia86.github.io/repocheckai/assets/images/icon-512.png" />
+    <meta
+      property="og:image"
+      content="https://glaucia86.github.io/repocheckai/assets/images/icon-512.png"
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Install RepoCheckAI CLI" />
+    <meta name="twitter:description" content="Install and run RepoCheckAI in under 5 minutes." />
     <meta
-      name="twitter:description"
-      content="Install and run RepoCheckAI in under 5 minutes."
+      name="twitter:image"
+      content="https://glaucia86.github.io/repocheckai/assets/images/icon-512.png"
     />
-    <meta name="twitter:image" content="https://glaucia86.github.io/repocheckai/assets/images/icon-512.png" />
   </head>
   <body>
     <!-- HEADER -->
 
-<main class="section"><div class="container"><h1>Install RepoCheckAI CLI</h1><p class="section-intro">Get running in under 5 minutes, then scale to deep analysis and issue publishing.</p><div class="metric-strip"><span class="pill">Node >= 24</span><span class="pill">Copilot SDK powered</span><span class="pill">Issue publishing supported</span></div><div class="grid-2"><article class="card feature"><h2>Global Install</h2><pre class="code" id="cmd-global">npm i -g repocheckai
-repocheck analyze owner/repo</pre><div class="hero-actions"><button class="btn btn-secondary" data-copy="#cmd-global">Copy command</button><a class="btn btn-secondary" href="./docs.html">View docs</a></div></article><article class="card feature"><h2>From Source</h2><pre class="code" id="cmd-source">git clone https://github.com/glaucia86/repocheckai.git
+    <main class="section">
+      <div class="container">
+        <h1>Install RepoCheckAI CLI</h1>
+        <p class="section-intro">
+          Get running in under 5 minutes, then scale to deep analysis and issue publishing.
+        </p>
+        <div class="metric-strip">
+          <span class="pill">Node >= 24</span><span class="pill">Copilot SDK powered</span
+          ><span class="pill">Issue publishing supported</span>
+        </div>
+        <div class="grid-2">
+          <article class="card feature">
+            <h2>Global Install</h2>
+            <pre class="code" id="cmd-global">
+npm i -g repocheckai
+repocheck analyze owner/repo</pre
+            >
+            <div class="hero-actions">
+              <button class="btn btn-secondary" data-copy="#cmd-global">Copy command</button
+              ><a class="btn btn-secondary" href="./docs.html">View docs</a>
+            </div>
+          </article>
+          <article class="card feature">
+            <h2>From Source</h2>
+            <pre class="code" id="cmd-source">
+git clone https://github.com/glaucia86/repocheckai.git
 cd repocheckai
 npm install
 npm run build
-npm run dev:cli</pre><button class="btn btn-secondary" data-copy="#cmd-source">Copy command</button></article></div><div class="card cta"><h3>Next step: run your first diagnosis</h3><pre class="code" id="cmd-first">repocheck analyze your-user/your-repo --model claude-sonnet-4</pre><div class="hero-actions"><button class="btn btn-secondary" data-copy="#cmd-first">Copy first run</button><a class="btn btn-primary" href="https://github.com/glaucia86/repocheckai" data-track="star_click">Star on GitHub</a></div></div></div></main>
+npm run dev:cli</pre
+            >
+            <button class="btn btn-secondary" data-copy="#cmd-source">Copy command</button>
+          </article>
+        </div>
+        <div class="card cta">
+          <h3>Next step: run your first diagnosis</h3>
+          <pre class="code" id="cmd-first">
+repocheck analyze your-user/your-repo --model claude-sonnet-4</pre
+          >
+          <div class="hero-actions">
+            <button class="btn btn-secondary" data-copy="#cmd-first">Copy first run</button
+            ><a
+              class="btn btn-primary"
+              href="https://github.com/glaucia86/repocheckai"
+              data-track="star_click"
+              >Star on GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- FOOTER -->
     <!-- SCRIPTS -->
