@@ -2,12 +2,12 @@ import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 
 /**
- * Script para migrar HTMLs da pasta site/ para site-src/
+ * Script para migrar HTMLs da pasta site/ para site-vite/
  * Extrai o conteúdo único e substitui partes compartilhadas por placeholders
  */
 
 const SITE_DIR = 'site';
-const SRC_DIR = 'site-src';
+const SRC_DIR = 'site-vite';
 const HTML_FILES = readdirSync(SITE_DIR).filter(f => f.endsWith('.html'));
 
 console.log(`📦 Migrando ${HTML_FILES.length} arquivos HTML...\n`);

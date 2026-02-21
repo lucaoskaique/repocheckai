@@ -3,12 +3,12 @@
 ## O que foi feito:
 
 ### ✅ Estrutura Criada
-- ✓ `site-src/` - Pasta com código fonte
-- ✓ `site-src/partials/` - Componentes compartilhados
+- ✓ `site-vite/` - Pasta com código fonte
+- ✓ `site-vite/partials/` - Componentes compartilhados
   - `head-common.html` - Meta tags, CSS, fonts
   - `header.html` - Navegação + topbar
   - `footer.html` - Footer + links
-- ✓ `site-src/index.html` - Template exemplo (simplificado)
+- ✓ `site-vite/index.html` - Template exemplo (simplificado)
 
 ### ✅ Configuração
 - ✓ `vite.config.js` - Config do Vite
@@ -21,8 +21,8 @@
   - `npm run migrate:site` - Migrar HTMLs
 
 ### ✅ Documentação
-- ✓ `site-src/README.md` - Guia completo
-- ✓ `site-src/SETUP.md` - Overview do setup
+- ✓ `site-vite/README.md` - Guia completo
+- ✓ `site-vite/SETUP.md` - Overview do setup
 
 ## 🚀 Próximos Passos:
 
@@ -36,7 +36,7 @@ npm install -D vite
 npm run migrate:site
 ```
 
-Isso vai converter todos os 11 arquivos HTML de `site/` para `site-src/` com os placeholders.
+Isso vai converter todos os 11 arquivos HTML de `site/` para `site-vite/` com os placeholders.
 
 ### 3. Testar no Dev Server
 ```bash
@@ -69,18 +69,18 @@ Preview da versão de produção em `http://localhost:4173`
 
 ### Conteúdo Compartilhado (Header/Footer)
 ```bash
-site-src/partials/header.html
-site-src/partials/footer.html
-site-src/partials/head-common.html
+site-vite/partials/header.html
+site-vite/partials/footer.html
+site-vite/partials/head-common.html
 ```
 
 **Benefício**: Edite UMA VEZ, atualize TODAS as páginas!
 
 ### Conteúdo Específico de Página
 ```bash
-site-src/index.html
-site-src/about.html
-site-src/docs.html
+site-vite/index.html
+site-vite/about.html
+site-vite/docs.html
 # ... etc
 ```
 
@@ -119,8 +119,8 @@ Reinicie o dev server (Ctrl+C e `npm run dev:site` novamente)
 
 ## 📚 Documentação
 
-- [site-src/README.md](site-src/README.md) - Guia detalhado
-- [site-src/SETUP.md](site-src/SETUP.md) - Overview técnico
+- [site-vite/README.md](site-vite/README.md) - Guia detalhado
+- [site-vite/SETUP.md](site-vite/SETUP.md) - Overview técnico
 
 ## 🎊 Pronto!
 
@@ -139,4 +139,4 @@ npm run build:site    # Gerar site/
 
 ---
 
-**Need help?** Veja a documentação em `site-src/README.md`
+**Need help?** Veja a documentação em `site-vite/README.md`

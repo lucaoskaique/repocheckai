@@ -5,7 +5,7 @@ Este diretório contém os arquivos fonte do site RepoCheckAI que são processad
 ## 📁 Estrutura
 
 ```
-site-src/
+site-vite/
 ├── partials/           # Componentes compartilhados
 │   ├── head-common.html   # Meta tags, links CSS/fonts
 │   ├── header.html        # Header + navegação
@@ -56,12 +56,12 @@ Todas as páginas serão atualizadas automaticamente!
 
 Por exemplo, para editar a homepage:
 ```bash
-site-src/index.html
+site-vite/index.html
 ```
 
 ### 3. Adicionar Nova Página
 
-1. Crie o arquivo HTML em `site-src/nova-pagina.html`
+1. Crie o arquivo HTML em `site-vite/nova-pagina.html`
 2. Use os placeholders:
    ```html
    <!doctype html>
@@ -88,7 +88,7 @@ site-src/index.html
    rollupOptions: {
      input: {
        // ...
-       novaPagina: resolve(__dirname, 'site-src/nova-pagina.html'),
+       novaPagina: resolve(__dirname, 'site-vite/nova-pagina.html'),
      }
    }
    ```

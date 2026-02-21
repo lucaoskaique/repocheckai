@@ -3,24 +3,24 @@ import { resolve } from 'path';
 import { htmlPartialsPlugin } from './vite-plugin-html-partials.js';
 
 export default defineConfig({
-  root: 'site-src',
+  root: 'site-vite',
   
   build: {
     outDir: '../site',
     emptyOutDir: false, // Não apagar assets/robots.txt/etc
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'site-src/index.html'),
-        about: resolve(__dirname, 'site-src/about.html'),
-        changelog: resolve(__dirname, 'site-src/changelog.html'),
-        contribute: resolve(__dirname, 'site-src/contribute.html'),
-        docs: resolve(__dirname, 'site-src/docs.html'),
-        install: resolve(__dirname, 'site-src/install.html'),
-        roadmap: resolve(__dirname, 'site-src/roadmap.html'),
-        trust: resolve(__dirname, 'site-src/trust.html'),
-        useCases: resolve(__dirname, 'site-src/use-cases.html'),
-        webUi: resolve(__dirname, 'site-src/web-ui.html'),
-        '404': resolve(__dirname, 'site-src/404.html'),
+        main: resolve(__dirname, 'site-vite/index.html'),
+        about: resolve(__dirname, 'site-vite/about.html'),
+        changelog: resolve(__dirname, 'site-vite/changelog.html'),
+        contribute: resolve(__dirname, 'site-vite/contribute.html'),
+        docs: resolve(__dirname, 'site-vite/docs.html'),
+        install: resolve(__dirname, 'site-vite/install.html'),
+        roadmap: resolve(__dirname, 'site-vite/roadmap.html'),
+        trust: resolve(__dirname, 'site-vite/trust.html'),
+        useCases: resolve(__dirname, 'site-vite/use-cases.html'),
+        webUi: resolve(__dirname, 'site-vite/web-ui.html'),
+        '404': resolve(__dirname, 'site-vite/404.html'),
       },
     },
   },
