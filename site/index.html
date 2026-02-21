@@ -38,7 +38,12 @@
     <header class="topbar">
       <div class="container topbar-row">
         <a class="brand" href="./index.html"><span class="brand-mark"></span>RepoCheckAI</a>
-        <nav class="nav-links" aria-label="Main">
+        <button class="hamburger" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="nav-links" id="main-nav" aria-label="Main">
           <a href="#hero">Home</a>
           <a href="#features">Features</a>
           <a href="#web-ui">Web UI</a>
@@ -48,6 +53,12 @@
           <a href="#oss">Contribute</a>
           <a href="./about.html">About</a>
           <a href="./docs.html">Docs</a>
+          <div class="nav-cta-mobile">
+            <a class="btn btn-secondary" href="https://github.com/glaucia86/repocheckai" data-track="star_click">
+              <span data-stars>Star on GitHub</span>
+            </a>
+            <a class="btn btn-primary" href="./web-ui.html" data-track="web_ui_click">Try Web UI</a>
+          </div>
         </nav>
         <div class="cta-row">
           <a class="btn btn-secondary" href="https://github.com/glaucia86/repocheckai" data-track="star_click">
@@ -258,7 +269,7 @@ repocheck analyze owner/repo --issue</pre>
             </article>
           </div>
         </div>
-        </section>
+      </section>
 
       <section class="section-dark chapter story-stage climax-section" id="climax" data-chapter="07" data-chapter-title="Climax">
         <div class="container climax-wrap">
@@ -465,7 +476,7 @@ repocheck analyze owner/repo --issue</pre>
           </section>
         </div>
         <div class="footer-meta" aria-label="Footer metadata">
-          <p>© <span data-year></span> RepoCheckAI. Built for OSS maintainers.</p>
+          <p>&copy; <span data-year></span> RepoCheckAI. Built for OSS maintainers.</p>
           <div class="footer-meta-links">
             <a href="./index.html#trust">Security</a>
             <a href="./index.html#oss">Open Source</a>
@@ -477,6 +488,3 @@ repocheck analyze owner/repo --issue</pre>
     <script src="./assets/app.js"></script>
   </body>
 </html>
-
-
-

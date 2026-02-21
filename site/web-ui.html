@@ -24,9 +24,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" />
     <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/animations.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
   </head>
   <body>
-    <header class="topbar"><div class="container topbar-row"><a class="brand" href="./index.html"><span class="brand-mark"></span>RepoCheckAI</a><nav class="nav-links"><a href="./index.html">Home</a><a href="./web-ui.html">Web UI</a><a href="./install.html">Install</a><a href="./trust.html">Trust</a><a href="./docs.html">Docs</a><a href="./about.html">About</a></nav><div class="cta-row"><a class="btn btn-secondary" href="https://github.com/glaucia86/repocheckai" data-track="star_click"><span data-stars>Star on GitHub</span></a><a class="btn btn-primary" href="./install.html" data-track="install_click">Install CLI</a></div></div></header>
+    <header class="topbar">
+      <div class="container topbar-row">
+        <a class="brand" href="./index.html"><span class="brand-mark"></span>RepoCheckAI</a>
+        <button class="hamburger" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="nav-links" id="main-nav" aria-label="Main">
+          <a href="./index.html">Home</a>
+          <a href="./web-ui.html">Web UI</a>
+          <a href="./install.html">Install</a>
+          <a href="./trust.html">Trust</a>
+          <a href="./docs.html">Docs</a>
+          <a href="./about.html">About</a>
+          <div class="nav-cta-mobile">
+            <a class="btn btn-secondary" href="https://github.com/glaucia86/repocheckai" data-track="star_click">
+              <span data-stars>Star on GitHub</span>
+            </a>
+            <a class="btn btn-primary" href="./install.html" data-track="install_click">Install CLI</a>
+          </div>
+        </nav>
+        <div class="cta-row">
+          <a class="btn btn-secondary" href="https://github.com/glaucia86/repocheckai" data-track="star_click">
+            <span data-stars>Star on GitHub</span>
+          </a>
+          <a class="btn btn-primary" href="./install.html" data-track="install_click">Install CLI</a>
+        </div>
+      </div>
+    </header>
     <main class="section"><div class="container"><h1>RepoCheckAI Web UI</h1><p class="section-intro">Team-friendly repository diagnostics with model control, live progress, and actionable reports.</p><article class="card feature web-ui-start"><h2>First run: local Web UI</h2><p class="section-intro">This Web UI runs locally from the project. Start it with one command and open the URL printed in the terminal.</p><pre class="code" id="web-ui-first-run">git clone https://github.com/glaucia86/repocheckai.git
 cd repocheckai
 npm install
