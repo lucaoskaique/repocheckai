@@ -24,9 +24,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" />
     <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/animations.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
   </head>
   <body>
-    <header class="topbar"><div class="container topbar-row"><a class="brand" href="./index.html"><span class="brand-mark"></span>RepoCheckAI</a><nav class="nav-links"><a href="./index.html">Home</a><a href="./use-cases.html">Use Cases</a><a href="./install.html">Install</a><a href="./contribute.html">Contribute</a><a href="./about.html">About</a></nav><div class="cta-row"><a class="btn btn-secondary" href="https://github.com/glaucia86/repocheckai" data-track="star_click"><span data-stars>Star on GitHub</span></a><a class="btn btn-primary" href="./install.html" data-track="install_click">Install CLI</a></div></div></header>
+    <header class="topbar">
+      <div class="container topbar-row">
+        <a class="brand" href="./index.html"><span class="brand-mark"></span>RepoCheckAI</a>
+        <button class="hamburger" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="nav-links" id="main-nav" aria-label="Main">
+          <a href="./index.html">Home</a>
+          <a href="./use-cases.html">Use Cases</a>
+          <a href="./install.html">Install</a>
+          <a href="./contribute.html">Contribute</a>
+          <a href="./about.html">About</a>
+          <div class="nav-cta-mobile">
+            <a class="btn btn-secondary" href="https://github.com/glaucia86/repocheckai" data-track="star_click">
+              <span data-stars>Star on GitHub</span>
+            </a>
+            <a class="btn btn-primary" href="./install.html" data-track="install_click">Install CLI</a>
+          </div>
+        </nav>
+        <div class="cta-row">
+          <a class="btn btn-secondary" href="https://github.com/glaucia86/repocheckai" data-track="star_click">
+            <span data-stars>Star on GitHub</span>
+          </a>
+          <a class="btn btn-primary" href="./install.html" data-track="install_click">Install CLI</a>
+        </div>
+      </div>
+    </header>
     <main class="section"><div class="container"><h1>Use Cases</h1><p class="section-intro">Where RepoCheckAI adds the most value for maintainers and engineering teams.</p><div class="grid-3"><article class="card feature"><h2>Release Readiness</h2><p>Run quick scans before cutting releases and deep analysis for critical branches.</p><p class="microcopy">Outcome: fewer surprise blockers post-release.</p></article><article class="card feature"><h2>Contributor Onboarding</h2><p>Find missing docs, workflow gaps, and governance friction that slows first PRs.</p><p class="microcopy">Outcome: faster time-to-first-contribution.</p></article><article class="card feature"><h2>Security and Governance Hygiene</h2><p>Execute recurring checks to keep standards and repository policies current.</p><p class="microcopy">Outcome: stronger operational consistency.</p></article></div><div class="card cta"><h3>Recommended cadence</h3><ul><li>Weekly quick scan for active repositories.</li><li>Deep analysis before major releases.</li><li>Publish high-priority findings as GitHub issues.</li></ul><div class="hero-actions"><a class="btn btn-primary" href="./install.html">Start with install</a><a class="btn btn-secondary" href="./docs.html">View docs</a></div></div></div></main>
         <footer class="footer" id="footer">
       <div class="container footer-shell">

@@ -24,9 +24,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" />
     <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/animations.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
   </head>
   <body>
-    <header class="topbar"><div class="container topbar-row"><a class="brand" href="./index.html"><span class="brand-mark"></span>RepoCheckAI</a><nav class="nav-links"><a href="./index.html">Home</a><a href="./roadmap.html">Roadmap</a><a href="./changelog.html">Changelog</a><a href="./contribute.html">Contribute</a><a href="./about.html">About</a></nav><div class="cta-row"><a class="btn btn-secondary" href="https://github.com/glaucia86/repocheckai" data-track="star_click"><span data-stars>Star on GitHub</span></a><a class="btn btn-primary" href="./contribute.html" data-track="contribute_click">Contribute</a></div></div></header>
+    <header class="topbar">
+      <div class="container topbar-row">
+        <a class="brand" href="./index.html"><span class="brand-mark"></span>RepoCheckAI</a>
+        <button class="hamburger" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="nav-links" id="main-nav" aria-label="Main">
+          <a href="./index.html">Home</a>
+          <a href="./roadmap.html">Roadmap</a>
+          <a href="./changelog.html">Changelog</a>
+          <a href="./contribute.html">Contribute</a>
+          <a href="./about.html">About</a>
+          <div class="nav-cta-mobile">
+            <a class="btn btn-secondary" href="https://github.com/glaucia86/repocheckai" data-track="star_click">
+              <span data-stars>Star on GitHub</span>
+            </a>
+            <a class="btn btn-primary" href="./contribute.html" data-track="contribute_click">Contribute</a>
+          </div>
+        </nav>
+        <div class="cta-row">
+          <a class="btn btn-secondary" href="https://github.com/glaucia86/repocheckai" data-track="star_click">
+            <span data-stars>Star on GitHub</span>
+          </a>
+          <a class="btn btn-primary" href="./contribute.html" data-track="contribute_click">Contribute</a>
+        </div>
+      </div>
+    </header>
     <main class="section"><div class="container"><h1>Public Roadmap</h1><p class="section-intro">Roadmap visibility for maintainers, users, and contributors.</p><div class="grid-3"><article class="card feature"><h2>Now</h2><ul><li>Conversion-focused project website.</li><li>CLI and Web UI messaging alignment.</li><li>Contributor onboarding clarity.</li></ul></article><article class="card feature"><h2>Next</h2><ul><li>Richer Web UI report interaction patterns.</li><li>Improved remediation templates and examples.</li><li>Expanded trust and model transparency surfaces.</li></ul></article><article class="card feature"><h2>Later</h2><ul><li>Longitudinal repository health tracking.</li><li>Team collaboration and triage workflows.</li><li>Deeper OSS ecosystem integrations.</li></ul></article></div><div class="card cta"><h3>Shape the roadmap</h3><p class="section-intro">Open issues and discussions influence what ships next.</p><div class="hero-actions"><a class="btn btn-primary" href="./contribute.html" data-track="contribute_click">Start contributing</a><a class="btn btn-secondary" href="./changelog.html">View recent releases</a></div></div></div></main>
         <footer class="footer" id="footer">
       <div class="container footer-shell">
