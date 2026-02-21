@@ -1,0 +1,10 @@
+# Ignorar node_modules se houver
+node_modules/
+.DS_Store
+
+# Ignorar symlink de assets (criado automaticamente)
+assets
+
+# Não ignorar os partials e HTMLs
+!partials/
+!*.html
